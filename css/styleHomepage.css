@@ -281,8 +281,8 @@ a:visited { color:#666; text-decoration: none;}
 /* Placing main container for carousel */ 
 .carousel {
   position: relative;
-  height: 370px;
-  width: 360px;
+  height: 390px;
+  width: 370px;
   margin: 0 auto;
 }
 
@@ -293,7 +293,7 @@ a:visited { color:#666; text-decoration: none;}
 
   height: 100%;
   overflow: hidden;
-  width: 360px;
+  width: 370px;
 }
 
 
@@ -334,7 +334,7 @@ a:visited { color:#666; text-decoration: none;}
   height: 350px;
   object-fit: cover;
 
-  border-radius: 50%;
+  border-radius: 4px;
 }
 
 .carousel__image:hover{
