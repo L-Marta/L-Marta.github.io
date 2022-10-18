@@ -7,7 +7,7 @@ const dots = Array.from(dotsNav.children);
 const cardWidth = cards[0].getBoundingClientRect().width;
 // Arrange the cards next to one another
 const setCardPosition = (card, index) => {
-  card.style.left = cardWidth * index + 'px';  
+  card.style.left = cardWidth * (index + 3) + 'px';  
 }
 cards.forEach(setCardPosition);
 
