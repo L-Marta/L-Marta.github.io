@@ -4,10 +4,10 @@ const nextButton = document.querySelector('.carousel__button--right');
 const prevButton = document.querySelector('.carousel__button--left');
 const dotsNav = document.querySelector('.carousel__nav');
 const dots = Array.from(dotsNav.children);
-const cardWidth = cards[0].getBoundingClientRect().width;
+const cardWidth = cards[0].getBoundingClientRect().width + 5;
 // Arrange the cards next to one another
 const setCardPosition = (card, index) => {
-  card.style.left = cardWidth * index + 'px' + 5;  
+  card.style.left = cardWidth * index + 'px';  
 }
 cards.forEach(setCardPosition);
 
@@ -25,7 +25,7 @@ const moveToCard = (currentCard, targetCard, targetDot, targetIndex) => {
   if (targetIndex === 0) {
     prevButton.classList.add('hidden');
     nextButton.classList.remove('hidden');
-  } else if (targetIndex == cards.length - 1) {
+  } else if (targetIndex == cards.length - 4) {
     prevButton.classList.remove('hidden');
     nextButton.classList.add('hidden');
   } else {
