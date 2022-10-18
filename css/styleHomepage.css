@@ -281,8 +281,8 @@ a:visited { color:#666; text-decoration: none;}
 /* Placing main container for carousel */ 
 .carousel {
   position: relative;
-  height: 600px;
-  width: 50%;
+  height: 350px;
+  width: 10%;
   margin: 0 auto;
 }
 
