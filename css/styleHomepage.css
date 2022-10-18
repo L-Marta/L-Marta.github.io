@@ -333,7 +333,7 @@ a:visited { color:#666; text-decoration: none;}
   width: 350px;
   height: 340px;
   object-fit: cover;
-  border-radius: 5px;
+  border-radius: 70%;
   padding: 10px 0 5px 0;
 }
 
