@@ -282,7 +282,7 @@ a:visited { color:#666; text-decoration: none;}
 .carousel {
   position: relative;
   height: 600px;
-  width: 80%;
+  width: 50%;
   margin: 0 auto;
 }
 
