@@ -331,9 +331,9 @@ a:visited { color:#666; text-decoration: none;}
 /* Styling and positioning the images on the front part of cards */ 
 .carousel__image {
   width: 350px;
-  height: 350px;
+  height: 340px;
   object-fit: cover;
-  border-radius: 4px;
+  border-radius: 5px;
 }
 
 .carousel__image:hover{
