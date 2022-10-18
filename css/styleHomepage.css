@@ -96,7 +96,7 @@ text-decoration: none;
 
 /* Showing a small flag after user hover on 'language' */  
 .header a.language:hover {
-background-image:url('../img/usukicon.ico');
+background-image:url('img/usukicon.ico');
 background-size: contain;
 color: transparent;
 }
@@ -114,7 +114,7 @@ opacity:0.90;
 
 /* Link to main image with cityscape */ 
 .pimg1{
-background-image:url('../img/img1.jpg');
+background-image:url('img/img1.jpg');
 min-height:100%;
 }
 
