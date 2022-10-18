@@ -290,7 +290,7 @@ a:visited { color:#666; text-decoration: none;}
 /* Styling main container for carousel cards */ 
 .carousel__track-container {
   position: relative;
-  background: #592;
+
   height: 100%;
   overflow: hidden;
   width: 320px;
