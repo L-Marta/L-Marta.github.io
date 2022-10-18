@@ -165,11 +165,11 @@ a:visited { color:#666; text-decoration: none;}
 /* First section */ 
 /* Styling introduction to the website text */ 
 .welcome{
-color: #064420;
-font-weight: 600;
-font-size: 50px;
-padding: 20px 0 0px 0;
-text-align: center;
+  color: #064420;
+  font-weight: 600;
+  font-size: 50px;
+  padding: 20px 0 0px 0;
+  text-align: center;
 }
 
 /* Styling gallery introduction text */ 
@@ -183,23 +183,23 @@ text-align: center;
 
 /* Styling the images into gallery using flexbox */ 
 .gallery{
-display:flex;
-flex-wrap: wrap;
-gap: 1em;
-justify-content: center;
+  display:flex;
+  flex-wrap: wrap;
+  gap: 1em;
+  justify-content: center;
 }
 
 /* Positioning and styling the images in the gallery */ 
 .item {
-align-items: center;
-border-radius: 10px;
-display: flex;
-flex-flow: row nowrap;
-font-size: 1.2rem;
-height: 400px;
-justify-content: center;
-position: relative;
-text-align: center;
+  align-items: center;
+  border-radius: 10px;
+  display: flex;
+  flex-flow: row nowrap;
+  font-size: 1.2rem;
+  height: 400px;
+  justify-content: center;
+  position: relative;
+  text-align: center;
 }
 
 
@@ -207,74 +207,74 @@ text-align: center;
 
 /* Styling images in gallery */ 
 .item img {
-border-radius: 10px;
-height: 406px;
-object-fit: cover;
-top: 0;
+  border-radius: 10px;
+  height: 406px;
+  object-fit: cover;
+  top: 0;
 }
 
 /* Placing a shadow on image when user hovers on it */ 
 .item:hover {
-border-radius: 10px;
-box-shadow: 10px 2px 15px 3px rgb(0 0 0 / 20%);
--webkit-transition:all .2s ease-in;
-transition: .2s;
+  border-radius: 10px;
+  box-shadow: 10px 2px 15px 3px rgb(0 0 0 / 20%);
+  -webkit-transition:all .2s ease-in;
+  transition: .2s;
 }
 
 /* Styling the names of the images */ 
 .item .item-text {
-bottom: 0;
-color: #f2f2f2;
-display: block;
-font-size: 1.25rem;
-margin: 0;
-padding: .5rem;
-position: absolute;
-width: initial;
-z-index: 1;
+  bottom: 0;
+  color: #f2f2f2;
+  display: block;
+  font-size: 1.25rem;
+  margin: 0;
+  padding: .5rem;
+  position: absolute;
+  width: initial;
+  z-index: 1;
 }
 
 /* Placing overlay gradient of the bottom of the images to make thier titles more visible */ 
 .item::after{
-content: '';
-background-image: linear-gradient(to top, rgba(0, 0, 0, 0.75), transparent);
-border-radius: 10px;
-bottom: 0;
-cursor: pointer;
-height: 30%;
-left: 0; 
-position: absolute;
-width: 100%; 
-z-index: 0;
+  content: '';
+  background-image: linear-gradient(to top, rgba(0, 0, 0, 0.75), transparent);
+  border-radius: 10px;
+  bottom: 0;
+  cursor: pointer;
+  height: 30%;
+  left: 0; 
+  position: absolute;
+  width: 100%; 
+  z-index: 0;
 }
 
 /* Second section */ 
 /* Styling heading */ 
 .section-two{
-color: #064420;
-font-size: 32px;
-text-align: center;
-font-weight: 400;
-margin: 20px;
-padding: 20px 60px 5px 60px;
+  color: #064420;
+  font-size: 32px;
+  text-align: center;
+  font-weight: 400;
+  margin: 20px;
+  padding: 20px 60px 5px 60px;
 }
 
 /* Styling text paragraph */ 
 .Budapest-info {
-color: #064420;
-line-height: 1.5;
-padding: 0 60px 10px 60px;
-overflow-wrap: break-word;
-text-align: center;
+  color: #064420;
+  line-height: 1.5;
+  padding: 0 60px 10px 60px;
+  overflow-wrap: break-word;
+  text-align: center;
 }
 
 /* Styling text introducing main attractions carousel */ 
 .top10 {
-color: #064420;
-font-size: 50px;
-font-weight: 600;
-padding: 0 60px 20px 60px;
-text-align: center;
+  color: #064420;
+  font-size: 50px;
+  font-weight: 600;
+  padding: 0 60px 20px 60px;
+  text-align: center;
 }
 
 
@@ -283,7 +283,7 @@ text-align: center;
 height: 360px;
 margin: 0 auto;
 position: relative;
-width: 1305px;
+width: 330px;
 }
 
 
