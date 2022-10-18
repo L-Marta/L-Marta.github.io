@@ -25,7 +25,7 @@ const moveToCard = (currentCard, targetCard, targetDot, targetIndex) => {
   if (targetIndex === 0) {
     prevButton.classList.add('hidden');
     nextButton.classList.remove('hidden');
-  } else if (targetIndex == cards.length - 4) {
+  } else if (targetIndex == cards.length - 1) {
     prevButton.classList.remove('hidden');
     nextButton.classList.add('hidden');
   } else {
