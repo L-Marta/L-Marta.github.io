@@ -280,59 +280,60 @@ a:visited { color:#666; text-decoration: none;}
 
 /* Placing main container for carousel */ 
 .carousel {
-  position: relative;
   height: 390px;
-  width: 370px;
   margin: 0 auto;
+  position: relative;
+  width: 370px;
 }
 
 
 /* Styling main container for carousel cards */ 
 .carousel__track-container {
-  position: relative;
-
+  border-radius: 4px;
   height: 100%;
+  position: relative;
   overflow: hidden;
   width: 370px;
 }
 
 
 .carousel__track {
-  position: relative;
+  background: #E4EFE7;
+  border-radius: 4px;
   height: 100%;
   margin: 0;
   padding: 0;
-  list-style: none;
+  position: relative;
   transition: transform ease-in 1s;
   width: 100%;
-  background: #E4EFE7;
 }
 
 /* Styling the whole card element */ 
 .carousel__card {
+  border-radius: 4px;
+  bottom: 0;
   position: absolute;
   width: 100%;
   top: 0;
-  bottom: 0;
-
 }
 
 /* Styling the front part of cards */ 
 .front{
+  background: #E4EFE7;
   bottom: 0;
   position: absolute;
   width: 100%;
   transition: all 1.5s;
   top: 0;
-  background: #E4EFE7;
 }
 
 /* Styling and positioning the images on the front part of cards */ 
 .carousel__image {
-  width: 350px;
+  border-radius: 4px;
   height: 340px;
-  object-fit: cover;
   padding: 10px 0 5px 0;
+  object-fit: cover;
+  width: 350px;
 }
 
 .carousel__image:hover{
@@ -368,6 +369,7 @@ h1.front-name {
   height: 100%;
   position: absolute;
   width: 100%;
+  border-radius: 4px;
 }
 
 /* Styling the back part of cards */ 
