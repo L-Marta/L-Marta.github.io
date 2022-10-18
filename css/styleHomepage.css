@@ -282,7 +282,7 @@ a:visited { color:#666; text-decoration: none;}
 .carousel {
   position: relative;
   height: 350px;
-  width: 80%;
+  width: 320px;
   margin: 0 auto;
 }
 
@@ -303,7 +303,7 @@ a:visited { color:#666; text-decoration: none;}
   padding: 0;
   list-style: none;
   transition: transform ease-in 250ms;
-  width: 320px
+  width: 320px;
 }
 
 /* Styling the whole card element */ 
