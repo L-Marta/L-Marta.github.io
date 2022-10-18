@@ -96,7 +96,7 @@ cursor: pointer;
 
 /* Showing a small flag after user hover on 'language' */  
 .header a.language:hover {
-  background-image:url('../img/usukicon.ico');
+  background-image:url('img/usukicon.ico');
   background-size: contain;
   color: transparent;
 }
@@ -114,7 +114,7 @@ cursor: pointer;
 
 /* Link to main image with cityscape */ 
 .pimg1{
-  background-image:url('../img/img1.jpg');
+  background-image:url('img/img1.jpg');
   min-height:100%;
 }
 
@@ -280,46 +280,43 @@ a:visited { color:#666; text-decoration: none;}
 
 /* Placing main container for carousel */ 
 .carousel {
-  height: 350px;
-  margin: 0 auto;
   position: relative;
+  height: 600px;
   width: 80%;
-
+  margin: 0 auto;
 }
 
 
 /* Styling main container for carousel cards */ 
 .carousel__track-container {
-  height: 100%;
   position: relative;
+  background: #592;
+  height: 100%;
   overflow: hidden;
 }
 
 
 .carousel__track {
+  position: relative;
   height: 100%;
   margin: 0;
   padding: 0;
-  position: relative;
+  list-style: none;
   transition: transform ease-in 250ms;
 }
 
 /* Styling the whole card element */ 
 .carousel__card {
-  border-radius: 4px;
-  bottom: 0;
-  height: 350px;
   position: absolute;
   width: 100%;
-  transition: all 0.5s;
   top: 0;
+  bottom: 0;
 }
 
 /* Styling the front part of cards */ 
 .front{
   border-radius: 4px;
   bottom: 0;
-  height: 350px;
   position: absolute;
   width: 100%;
   transition: all 0.5s;
@@ -328,11 +325,9 @@ a:visited { color:#666; text-decoration: none;}
 
 /* Styling and positioning the images on the front part of cards */ 
 .carousel__image {
-  border-radius: 4px;
-  height: 300px;
-  padding: 10px 10px 5px 10px;
+  width: 100%;
+  height: 100%;
   object-fit: cover;
-  width: 300px;
 }
 
 .carousel__image:hover{
