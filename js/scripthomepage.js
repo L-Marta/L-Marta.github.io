@@ -17,7 +17,6 @@ const moveToCard = (currentCard, targetCard, targetDot, targetIndex) => {
   track.style.transform = 'translateX(-'+ targetCard.style.left + ')';
   currentCard.classList.remove('current-card');
   targetCard.classList.add('current-card');
-  
   currentDot.classList.remove('current-card');
   targetDot.classList.add('current-card');
   
