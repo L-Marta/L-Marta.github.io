@@ -1,0 +1,473 @@
+body, html{
+  background-color: #FDFAF6;
+  color:#666;
+  font-family:'Oswald', sans-serif;
+  font-size:16px;
+  font-weight:400px;
+  height:100%;
+  line-height:1.8em;
+  margin:0;
+  min-height: 100vh;
+  position: relative;
+}
+
+/* Header styling */
+
+/* whole header */
+.header {
+background-color: #E4EFE7;
+overflow: hidden;
+padding: 5px 10px;
+}
+
+/* Search bar - full */
+
+.header a.search{
+align-items: center;
+background-color: #FDFAF6;
+background-position: center;
+background-size: cover;
+border-radius: 60px;
+display: inline-flex;
+justify-content: center;
+max-height: 22px;
+max-width: 400px;
+}
+
+
+/* Search bar - input part */
+.header input[type=text] {
+background-color: #FDFAF6;
+border: none;
+border-radius: 60px;
+float: left;
+height: 25px;
+outline: none;
+}
+
+/* Search bar - button image and button itself */
+.header button img {
+height: 20px;
+width: 20px;
+}
+
+.header button{
+background-color: #E4EFE7;
+border: 0;
+border-radius: 40%;
+cursor: pointer;
+}
+
+
+/* Placing the buttons for subpages on the right */
+.header-right {
+  float: right;
+}
+
+/* Change of color when user hovers over 'homepage', 'contact us', 'events' or 'language' 'a' elements */
+.header a:hover {
+  background-color: #FDFAF6;
+  color: black;
+}
+
+
+/* homepage link with different coloring than others*/
+.header-right .homepage {
+  padding: 5px;
+}
+
+.header a.homepage {
+  background-color:#064420;
+  color:#FDFAF6;
+}
+
+/* 'Events' and 'contact us'pages' links */
+.header a{
+  border-radius: 4px;
+  color: black;
+  float: left;
+  font-size: 18px;
+  line-height: 22px;
+  padding: 5px;
+  text-align: center;
+  text-decoration: none;
+}
+
+
+/* Showing a small flag after user hover on 'language' */  
+.header a.language:hover {
+  background-image:url('../img/usukicon.ico');
+  background-size: contain;
+  color: transparent;
+}
+
+
+/* Position of main image with city scape and parallax effect */ 
+.pimg1{
+  background-attachment:fixed;    /* parallax effect*/ 
+  background-position:center;
+  background-repeat:no-repeat;
+  background-size:cover;
+  position:relative;
+  opacity:0.90;
+}
+
+/* Link to main image with cityscape */ 
+.pimg1{
+  background-image:url('../img/img1.jpg');
+  min-height:100%;
+}
+
+/* Main image with cityscape */ 
+.image1{
+  color:#064420;
+  font-size:50px;
+  font-weight:600;
+  letter-spacing:6px;
+  position:absolute;
+  text-transform:uppercase;
+  top:50%;
+  width:100%;
+}
+
+
+/* Making the color around name "Budapest" transparent */ 
+.image1 .main_name {
+  background-color:transparent;
+  color:#064420;
+
+}
+
+/* Creating text cutout for name "Budapest" and positioning it*/ 
+.text-cutout {
+  background-color:#E4EFE7;
+  height: 36px;
+  mix-blend-mode: screen;
+  opacity: 80%;
+  padding: 13px;
+  text-align:center;
+}
+
+/* Making the link to source of main image less visible */ 
+.source{
+  float: right;
+  font-size: x-small;
+  margin-right: 5px;
+}
+
+/* Removing the usual underline and blue color of links */ 
+a:active { color: #666; text-decoration: none;}
+a:hover { color: #666; text-decoration: none;}
+a:link { color:#666; text-decoration: none; }
+a:visited { color:#666; text-decoration: none;}
+
+
+/* First section */ 
+/* Styling introduction to the website text */ 
+.welcome{
+  color: #064420;
+  font-weight: 600;
+  font-size: 50px;
+  padding: 20px 0 0px 0;
+  text-align: center;
+}
+
+/* Styling gallery introduction text */ 
+.gallery-description {
+  color: #064420;
+  font-weight: 500;
+  font-size: 30px;
+  padding: 0 0 20px 0;
+  text-align: center;
+}
+
+/* Styling the images into gallery using flexbox */ 
+.gallery{
+  display:flex;
+  flex-wrap: wrap;
+  gap: 1em;
+  justify-content: center;
+}
+
+/* Positioning and styling the images in the gallery */ 
+.item {
+  align-items: center;
+  border-radius: 10px;
+  display: flex;
+  flex-flow: row nowrap;
+  font-size: 1.2rem;
+  height: 400px;
+  justify-content: center;
+  position: relative;
+  text-align: center;
+}
+
+
+
+
+/* Styling images in gallery */ 
+.item img {
+  border-radius: 10px;
+  height: 406px;
+  object-fit: cover;
+  top: 0;
+}
+
+/* Placing a shadow on image when user hovers on it */ 
+.item:hover {
+  border-radius: 10px;
+  box-shadow: 10px 2px 15px 3px rgb(0 0 0 / 20%);
+  -webkit-transition:all .2s ease-in;
+  transition: .2s;
+}
+
+/* Styling the names of the images */ 
+.item .item-text {
+  bottom: 0;
+  color: #f2f2f2;
+  display: block;
+  font-size: 1.25rem;
+  margin: 0;
+  padding: .5rem;
+  position: absolute;
+  width: initial;
+  z-index: 1;
+}
+
+/* Placing overlay gradient of the bottom of the images to make thier titles more visible */ 
+.item::after{
+  content: '';
+  background-image: linear-gradient(to top, rgba(0, 0, 0, 0.75), transparent);
+  border-radius: 10px;
+  bottom: 0;
+  cursor: pointer;
+  height: 30%;
+  left: 0; 
+  position: absolute;
+  width: 100%; 
+  z-index: 0;
+}
+
+/* Second section */ 
+/* Styling heading */ 
+.section-two{
+  color: #064420;
+  font-size: 32px;
+  text-align: center;
+  font-weight: 400;
+  margin: 20px;
+  padding: 20px 60px 5px 60px;
+}
+
+/* Styling text paragraph */ 
+.Budapest-info {
+  color: #064420;
+  line-height: 1.5;
+  padding: 0 60px 10px 60px;
+  overflow-wrap: break-word;
+  text-align: center;
+}
+
+/* Styling text introducing main attractions carousel */ 
+.top10 {
+  color: #064420;
+  font-size: 50px;
+  font-weight: 600;
+  padding: 0 60px 20px 60px;
+  text-align: center;
+}
+
+
+/* Placing main container for carousel */ 
+.carousel {
+  height: 350px;
+  margin: 0 auto;
+  position: relative;
+  width: 320px;
+  background-color: #E4EFE7;
+}
+
+
+/* Styling main container for carousel cards */ 
+.carousel__track-container {
+  height: 100%;
+  position: relative;
+  overflow: hidden;
+  width: 320px;
+
+}
+
+
+.carousel__track {
+  height: 100%;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  position: relative;
+  transition: transform ease-in 250ms;
+}
+
+/* Styling the whole card element */ 
+.carousel__card {
+  border-radius: 4px;
+  bottom: 0;
+  height: 350px;
+  position: absolute;
+  width: 320px;
+  transition: all 0.5s;
+  top: 0;
+}
+
+/* Styling the front part of cards */ 
+.front{
+  border-radius: 4px;
+  bottom: 0;
+  height: 350px;
+  position: absolute;
+  width: 320px;
+  transition: all 0.5s;
+  top: 0;
+}
+
+/* Styling and positioning the images on the front part of cards */ 
+.carousel__image {
+  border-radius: 4px;
+  height: 300px;
+  padding: 10px 10px 5px 10px;
+  object-fit: cover;
+  width: 300px;
+}
+
+.carousel__image:hover{
+  cursor: pointer;
+}
+
+/* Styling the text on the front part of cards */ 
+h1.front-name {
+  bottom: 20px;
+  color: #064420;
+  font-size: 15px;;
+  position: relative; 
+  text-align: center;
+}
+
+/* Making the card flip from front to back */ 
+.flip-card {
+  height: 100%;
+  position: relative;
+  width: 100%;
+  text-align: center;
+  transition: transform 1.5s ease;
+  transform-style: preserve-3d;
+}
+
+.carousel__card:hover .flip-card {
+  transform: rotateY(180deg);
+}
+
+/* Ensuring both front and back are the same size and only one of them is visible */ 
+.front, .back {
+  backface-visibility: hidden;
+  height: 100%;
+  position: absolute;
+  width: 100%;
+}
+
+/* Styling the back part of cards */ 
+.back {
+  background-color: #FDFAF6;
+  color: black;
+  transform: rotateY(180deg);
+}
+
+/* Styling the text on the front part of cards */ 
+h1.back-name {
+  color: #064420;
+  font-size:25px;
+  text-align: center;
+}
+
+.description {
+  font-size: 20px;
+  padding: 5px 20px;
+  text-align: justify;
+}
+
+
+/* Styling the buttons used to swipe to right and left */ 
+.carousel__button {
+  background: #E4EFE7;
+  border: 0;
+  border-radius: 50%;
+  color: #064420;
+  cursor: pointer;
+  font-size: 15px;
+  height: 25px;
+  position: absolute;
+  opacity: 0.6;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 25px;
+}
+
+.carousel__button:hover {
+  opacity: 1;
+}
+
+/* Positioning the buttons used to swipe to right and left */ 
+.carousel__button--left {
+  left: -40px;
+}
+
+.carousel__button--right {
+  right: -40px;
+}
+
+
+/* Styling the area with dots used to navigate in carousel */ 
+.carousel__nav {
+  display: flex;
+  justify-content: center;
+  padding: 10px 0;
+}
+
+/* Styling each "dot" */ 
+.carousel__indicator {
+  background: #E4EFE7;
+  border: 0;
+  border-radius: 50%;
+  cursor: pointer;
+  height: 10px;
+  margin: 0 12px;
+  width: 10px;
+}
+
+/* Making 'current card' "dot" bigger */ 
+.carousel__indicator.current-card {
+  height: 12px;
+  width: 12px;
+  background: #064420;
+  opacity: 0.5;
+  
+}
+
+.hidden {
+  display: none;
+}
+
+
+/* Positioning and styling footer */ 
+.footer {
+  background-color: #E4EFE7;
+  text-align: center;
+  width: 100%;
+  margin: 60px 0 0 0;
+}
+
+/* Positioning and styling text in footer */ 
+.footer-text{
+  font-size: 11px;
+  line-height: 1.5;
+  padding: 10px;
+}
+
