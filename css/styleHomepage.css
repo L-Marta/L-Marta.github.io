@@ -334,6 +334,7 @@ a:visited { color:#666; text-decoration: none;}
   height: 340px;
   object-fit: cover;
   border-radius: 5px;
+  padding: 5px 0 5px 0;
 }
 
 .carousel__image:hover{
