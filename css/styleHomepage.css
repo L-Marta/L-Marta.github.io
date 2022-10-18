@@ -319,7 +319,6 @@ a:visited { color:#666; text-decoration: none;}
 
 /* Styling the front part of cards */ 
 .front{
-  border-radius: 4px;
   bottom: 0;
   position: absolute;
   width: 100%;
@@ -333,7 +332,6 @@ a:visited { color:#666; text-decoration: none;}
   width: 350px;
   height: 340px;
   object-fit: cover;
-  border-radius: 70%;
   padding: 10px 0 5px 0;
 }
 
