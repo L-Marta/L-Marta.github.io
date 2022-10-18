@@ -303,12 +303,13 @@ a:visited { color:#666; text-decoration: none;}
   padding: 0;
   list-style: none;
   transition: transform ease-in 250ms;
+  width: 320px
 }
 
 /* Styling the whole card element */ 
 .carousel__card {
   position: absolute;
-  width: 100%;
+  width: 320px;
   top: 0;
   bottom: 0;
 }
@@ -318,15 +319,15 @@ a:visited { color:#666; text-decoration: none;}
   border-radius: 4px;
   bottom: 0;
   position: absolute;
-  width: 100%;
+  width: 320px;
   transition: all 0.5s;
   top: 0;
 }
 
 /* Styling and positioning the images on the front part of cards */ 
 .carousel__image {
-  width: 100%;
-  height: 100%;
+  width: 320px;
+  height: 350px;
   object-fit: cover;
 }
 
