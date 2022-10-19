@@ -94,6 +94,9 @@ body {
     text-decoration: none;
   }
   
+  .header a.language{
+    color:black;
+  }
   
   /* Showing a small flag after user hover on 'language' */  
   .header a.language:hover {
