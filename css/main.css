@@ -1,0 +1,283 @@
+body {
+  font-family:'Oswald', sans-serif;
+  padding: 0;
+  margin: 0;
+}
+
+/* Header styling */
+
+/* whole header */
+.header {
+  background-color: #E4EFE7;
+  overflow: hidden;
+  padding: 5px 10px;
+  color:#666;
+  font-family:'Oswald', sans-serif;
+  }
+  
+  /* Search bar - full */
+  
+  .header a.search{
+  align-items: center;
+  background-color: #FDFAF6;
+  background-position: center;
+  background-size: cover;
+  border-radius: 60px;
+  display: inline-flex;
+  justify-content: center;
+  max-height: 22px;
+  max-width: 400px;
+  box-sizing:initial;
+  }
+  
+  
+  /* Search bar - input part */
+  .header input[type=text] {
+  background-color: #FDFAF6;
+  border: none;
+  border-radius: 60px;
+  float: left;
+  height: 25px;
+  outline: none;
+  }
+  
+  /* Search bar - button image and button itself */
+  .header button img {
+  height: 20px;
+  width: 20px;
+  }
+  
+  .header button{
+  background-color: #E4EFE7;
+  border: 0;
+  border-radius: 40%;
+  cursor: pointer;
+  }
+  
+  
+  /* Placing the buttons for subpages on the right */
+  .header-right {
+    float: right;
+  }
+  
+  /* Change of color when user hovers over 'homepage', 'contact us', 'events' or 'language' 'a' elements */
+  .header a:hover {
+    background-color: #FDFAF6;
+    color: black;
+  }
+  
+  
+  /* homepage link with different coloring than others*/
+  .header-right .homepage {
+    padding: 5px;
+  }
+  
+  .header a.eventshp {
+    background-color:#064420;
+    color:#FDFAF6;
+  }
+
+  .header a.eventshp:hover {
+    background-color: #FDFAF6;
+    color: black;
+  }
+  
+  /* 'Events' and 'contact us'pages' links */
+  .header a{
+    border-radius: 4px;
+    color:#666;
+    float: left;
+    font-size: 18px;
+    line-height: 22px;
+    padding: 5px;
+    text-align: center;
+    text-decoration: none;
+  }
+  
+  
+  /* Showing a small flag after user hover on 'language' */  
+  .header a.language:hover {
+    background-image:url("img/usukicon.ico");
+    background-size: contain;
+    color: transparent;
+  }
+  
+
+#navbareventpage{
+  background-color: #FAF1E6;
+  display: flex;  /* unlocks "flex" property for its children (<a> tags) */
+}
+#navbareventpage a {
+  height: 200px;
+  flex: 1;  /* all of these <a> elements will "grow" an equal amount (so they all have an equal width) */
+  display: flex;  /* allows use of "justify-content" and "align-items" properties */
+  justify-content: center;  /* horizontally centers the contents (the text within) */
+  align-items: center; /* vertically centers the contents (the text within) */
+  text-align: center;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+#navbareventpage a:hover {
+  background-color: rgba(0, 0, 0, 0.1);  /* change color when hover over the link */
+}
+.eventbtn{
+    font-family: 'Oswald';
+    color: white;
+    font-weight: bold;
+    font-size: 50px;
+}
+
+.flex-container{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.maineventbutton{
+    font-family: 'Oswald', sans-serif;
+    color: white;
+    font-weight: normal;
+    font-size: 50px;
+    background-color: #064420;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 80%;
+  padding: 40px;
+}
+
+.hr {
+  /* add some fancy styling to the horizontal lines */
+  width: 75%;
+  border: 1.5px solid #ddd;
+  border-radius: 50%;
+}
+* {box-sizing:border-box}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 73%;
+  position: relative;
+  margin: auto;
+}
+
+/* Hide the images by default */
+.mySlides {
+  display: none;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+.h2{
+  font-family: 'Oswald';
+  color: white;
+  font-weight: bold;
+  font-size: 50px;
+  background-color: #FAF1E6;
+}
+
+.Music{
+  font-size: 70px;
+  font-family: 'Oswald';
+  font-weight: bold;
+  color: #413F42;
+}
+.paragraph{
+  font-family:'Oswald', sans-serif;
+  font-size: 30px;
+  padding: 40px;
+  margin: 0px;
+}
+
+/* Positioning and styling footer */ 
+.footer {
+  background-color: #E4EFE7;
+  font-family:'Oswald', sans-serif;
+  text-align: center;
+  width: 100%;
+  margin: 60px 0 0 0;
+}
+
+/* Positioning and styling text in footer */ 
+.footer-text{
+  font-size: 11px;
+  line-height: 1.5;
+  padding: 10px;
+  margin: 0;
+}

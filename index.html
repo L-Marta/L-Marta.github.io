@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Events</title>
+    <link rel="stylesheet" href="css/main.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Oswald:wght@300;400;600&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
+    />
+  </head>
+  <body>
+    <!-- Header with search bar and links to subpages -->
+    <div class="header">
+      <!-- Search bar for google -->
+              <a class="search">
+                  <form action="https://google.com/search" method="get" class="search-bar">
+                      <input type="text" placeholder="Search in google..." name="q">
+                      <button type="submit"><img src="img/search.png"> </button>
+                  </form>
+              </a>
+              <div class="header-right">
+                <a class="homepage" href="indexHomepage.html">Home</a>
+                <a class="eventshp" href="index.html">Events</a>
+                <a href="#contact">Contact us</a>
+                <a class="language">EN</a>
+              </div>
+          </div>
+    <div id="navbareventpage">
+      <a class="eventbtn" href="#Music" role="button">Music</a>
+      <a class="eventbtn" href="#Spa" role="button">Thermal baths,spas</a>
+      <a class="maineventbutton" href="index.html" role="button">Events</a>
+      <a class="eventbtn" href="#Art" role="button">Art and Culture</a>
+      <a class="eventbtn" href="#Gastro" role="button">Gastronomy</a>
+    </div>
+<!-- Slideshow-container -->
+    <div class="slideshow-container">
+      <div class="mySlides fade">
+        <div class="numbertext">1 / 5</div>
+        <img src="images/IMG1.jpg" style="width:100%">
+        <div class="text">Folk Dancers</div>
+      </div>
+    
+      <div class="mySlides fade">
+        <div class="numbertext">2 / 5</div>
+        <img src="images/IMG2.jpg" style="width:100%">
+        <div class="text">The Budapest Opera House</div>
+      </div>
+    
+      <div class="mySlides fade">
+        <div class="numbertext">3 / 5</div>
+        <img src="images/IMG3.jpg" style="width:100%">
+        <div class="text">Gellert spa</div>
+      </div>
+    
+      <div class="mySlides fade">
+        <div class="numbertext">4 / 5</div>
+        <img src="images/IMG4.jpg" style="width:100%">
+        <div class="text">Sziget Festival</div>
+      </div>
+    
+      <div class="mySlides fade">
+        <div class="numbertext">5 / 5</div>
+        <img src="images/IMG5.jpg" style="width:100%">
+        <div class="text">Csabai SausageFestival</div>
+      </div>
+    
+    
+      <!-- Next and previous buttons -->
+      <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+      <a class="next" onclick="plusSlides(1)">&#10095;</a>
+    </div>
+    <br>
+    
+    <!-- The dots/circles -->
+    <div style="text-align:center">
+      <span class="dot" onclick="currentSlide(1)"></span> 
+      <span class="dot" onclick="currentSlide(2)"></span> 
+      <span class="dot" onclick="currentSlide(3)"></span> 
+      <span class="dot" onclick="currentSlide(4)"></span>
+      <span class="dot" onclick="currentSlide(5)"></span>
+    </div>
+   
+  
+    <div class="flex-container">
+      <div class="container" id="Music">
+        <h2 class="Music"><u>Music</u></h2>
+        <div>
+          <p class="paragraph">
+            Despite its unique classical history, taking inspiration from Turkey
+            and Mongolia, today there are large events for more current pop
+            music in Hungary. With the bustling city of Budapest, many people
+            are attracted to the country just for vacation, and then find
+            themselves mesmerized all over again by the music scene. Hungary
+            offers a great choice of festivals such as <a href=https://szigetfestival.com/en target="_blank">Sziget Festival</a>, <a href=https://balatonsound.com/en/Balaton target="_blank" >BalatonSound</a>
+            <a href="https://jazzpiknik.hu" target="_blank">JazzPiknik</a> and <a href=https://volt.hu/en/ target="_blank" >Volt.</a>
+          </p>
+        </div>
+        <div>
+          <p class="paragraph">
+            However, Hungary has made many contributions to the fields of folk
+            and classical music. Hungarian folk music is a prominent part of the
+            national identity and continues to play a major part in Hungarian
+            music.Hungary is the proud home of world-famous composers such as Liszt and Bartok. Check the unique and beautiful <a href=https://www.mupa.hu/en target="_blank">Mupa</a>, which holds place for amazing concerts.
+          </p>
+        </div>
+      </div>
+
+      <div class="container" id="Spa">
+        <h2 class="Music"><u>Thermal Baths,spas</u></h2>
+        <div>
+          <p class="paragraph">Budapest is quite rightly nicknamed the "City of Spas," thanks to its 118 natural thermal springs that deliver 70 million liters of therapeutic waters each day to more than a dozen spas. The Turkish baths of here are astonishingly beautiful, renowned the world over for their relaxing and medicinal benefits.
+          </p>
+        </div>
+        <div>
+          <p class="paragraph">Taking a dip in the famous <a href=http://szechenyispabaths.com target="_blank">Széchényi</a> Baths during winter is an experience like no other. Jumping from one of the 10 indoor pools to the outside bathing area is a memorable  and even pleasurable  jolt to the system.
+          </p>
+        </div>
+      </div>
+
+      <div class="container" id="Art">
+        <h2 class="Music"><u>Art and Culture</u></h2>
+        <div>
+          <p class="paragraph">Art and culture are the cornerstones of our everyday lives. Diversity, creativity, artistic freedom and dialogue are vital. Museums, galleries, theatres, concerts, festivals, book markets – we love them all. Pick your favourite from the most beautiful places and the most interesting events and activities.  </p>
+        </div>
+        <div>
+          <p class="paragraph">The <a href=https://en.mng.hu target="_blank">Hungarian National Gallery</a>in Buda Castle is the largest public collection of Hungarian fine art. Its thematic and historical exhibitions introduce visitors not only to the different periods of Hungarian art history, but also to the country’s past.</p>
+        </div>
+        <div>
+          <p class="paragraph">Whether you want to see something light, something musical or something more serious, you’ll definitely find what you are looking for from the great selection of theatres in Budapest. Check out the actual repertoire of <a href="https://madachszinhaz.hu/en" target="_blank">Madách ,</a> <a href="https://www.vigszinhaz.hu/english/index.php" target="_blank" >Víg </a> and <a href="https://nemzetiszinhaz.hu/en/repertoire" target="_blank">National Theatre.</a> 
+          </p>
+        </div>
+      </div>
+
+      <div class="container" id="Gastro">
+        <h2 class="Music"><u>Gastronomy</u></h2>
+        <div>
+          <p class="paragraph">In Hungary, the range of gastronomic events and wine festivals across the country is increasing from year to year, attracting gourmet tourists to all parts of the country. Have you ever stuffed sausage or harvested grapes to make delicious wine? You should definitely try yourself at the <a href="https://www.csabaikolbaszfesztival.hu" target="_blank">Csabai SausageFestival</a> and <a href="https://aborfesztival.hu/en" target="_blank" >Budapest Wine Festival</a> ! </p>
+        </div>
+        <div>
+          <p class="paragraph">Hungarian cuisine is not only about goulash and paprika! Be our guest and experience the exquisite gastronomy of our country! Hungary is proud of its cuisine and the country offers a wide selection of venues to dine at, from charming restaurants, wine bars, unique bistros, creative cooking courses to culinary festivals.</p>
+        </div>
+      </div>
+    </div>
+    <div class="footer">
+      <p class="footer-text">2022 </br>
+      Webpage created for the final project in the CFG's course "Web Development"</p>
+  </div>
+  <script src="js/index.js"></script>
+  </body>
+</html>
