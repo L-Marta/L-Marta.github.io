@@ -113,7 +113,7 @@ cursor: pointer;
 }
 
 /* Link to main image with cityscape */ 
-.pimg1{
+.main-page{
   background-image:url('img/img1.jpg');
   min-height:100%;
 }
