@@ -1,0 +1,63 @@
+
+body, html {
+  height: 100%;
+  margin: 0;
+}
+/* Budapest Parliament (https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/budapest-danubio-parlamento-1552491234.jpg)*/
+.hero-image {
+background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
+background-image: url('img/landingpage.jpg');
+height: 100%;
+background-position: center;
+background-repeat: no-repeat;
+background-size: cover;
+position: relative;
+}
+/* Budapest*/
+.hero-text {
+text-align: center;
+position: absolute;
+top: 50%;
+left: 50%;
+transform: translate(-50%, -50%);
+color: rgb(250, 241, 230);
+font-size: 46px;
+font-family: 'Oswald', sans-serif;
+}
+/*Discover*/
+.btn {
+position: absolute;
+left: 50%;
+transform: translate(-50%, -50%);
+-ms-transform: translate(-50%, -50%);
+background-color:#064420;
+color: #FAF1E6;
+font-size: 40px;
+padding: 8px 20px;
+border: none;
+cursor: pointer;
+border-radius: 5px;
+text-align: center;
+font-family: 'Oswald', sans-serif;
+}
+.btn:hover {
+background-color: #E4EFE7;
+color: #064420;
+}
+.topnav {
+margin-top: -100%;
+margin-bottom: 150%;
+}
+/* Navbar links */
+.topnav a {
+color: #FAF1E6;
+padding: 16px;
+text-decoration: none;
+font-size: 20px;
+
+}
+.topnav a:hover {
+background-color: #FAF1E6;
+color: #064420;
+border-radius: 9px;
+}
